@@ -1,0 +1,33 @@
+[user]
+	name = Jin M
+  email = jinmiao@utexas.edu
+[core]
+	editor = vim
+[color]
+	ui = auto
+[alias]
+  alias = config --get-regexp ^alias
+  s = status
+  co = checkout
+  ci = commit
+  br = branch
+  vd = difftool -y -t vimdiff -R
+  vc = difftool --tool=vimdiff --cached
+  v = difftool --tool=vimdiff
+  vv = difftool --tool=vimdiff HEAD^
+  vp = difftool --tool=vimdiff p4sync
+  mt = mergetool
+  cia = commit --amend
+  cm = commit -m 
+  cam = commit -a -m  
+  g = log --graph --all --color --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
+  gt = log --graph --all --topo-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
+  gh = log --graph                    -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = true
+[merge]
+	tool = vimdiff
+[pager]
+	diff = false
